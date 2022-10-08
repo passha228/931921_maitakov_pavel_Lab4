@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*-------------------------*/
+/*header*/
+header {
+    background-color: #2e5473;
+    min-width: 100%
+}
+
+img[src="logo.png"] {
+    position: relative;
+    left: 10%;
+    padding: 5px 0;
+}
+
+/*-------------------------*/
+/*main*/
+body {
+    background-color: #edeef0;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    padding-top: 10px;
+    margin: 0 22%;
+}
+
+/*-------------------------*/
+/*side bar*/
+nav {
+    display: flex;
+    min-width: 20%;
+    flex-direction: column;
+}
+
+article.feedBox p::selection {
+    background-color: #e1e5eb;
+    color: green;
+}
+
+li {
+    list-style: none;
+    padding: 0 10px 10px 0;
+}
+a {
+    color: #507299;
+}
+
+a:link {
+    text-decoration: none;
+}
+
+li:hover {
+    background-color: #e1e5eb;
+}
+
+/*-------------------------*/
+/*feed*/
+article {
+    max-width: 60%;
+    background-color: white;
+    border: solid 1px #e1e5eb;
+    padding: 15px;
+    margin: 0 15px 15px 15px;
+}
+
+.feedBox {
+    border-radius: 10px 10px;
+}
+
+img {
+    max-height: 100%;
+    max-width: 100%;
+}
+
+div.line {
+    width: 100%;
+    border: solid 2px #e1e5eb;
+    
+}
+
+.likeComment {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+/*-------------------------*/
+/*side*/
+.side {
+    background-color: #edeef0;
+    font-size: 10pt;
+}
+
+aside {
+    min-width: 20%;
+}
+
+.sidebar {
+    border-radius: 5px 5px;
+}
+
+
+/*-------------------------*/
+/*footer*/
+footer {
+    background-color: white;
+    color: #d0d0d0;
+    text-align: center;
+    font-size: 15pt;
+    width: 100%;
+    min-height: 50px;
+}
+
+
+/*-------------------------*/
+/*scaling*/
+@media screen and (max-width: 1000px)
+{
+    aside {
+        display: none;
+    }
+    nav {
+        flex-direction: row;
+    }
+    main {
+        flex-direction: column;
+    }
+    li {
+        display: inline-block;
+        font-size: 8pt;
+    }
+}
+
